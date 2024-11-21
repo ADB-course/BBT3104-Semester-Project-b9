@@ -11,7 +11,6 @@ BEGIN
         WHERE order_id = NEW.order_id;
     END IF;
 END$$
-
 DELIMITER ;
 
 
@@ -25,5 +24,4 @@ BEGIN
         SET NEW.order_status = 'Pending';
     END IF;
 END$$
-
 DELIMITER ;
